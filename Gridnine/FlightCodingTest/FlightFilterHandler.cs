@@ -34,18 +34,18 @@ namespace Gridnine.FlightCodingTest
             switch (key)
             {
                 case 1:
-                    return GetCurrentFlights(flights);
+                    return GetFlightsForFilterOne(flights);
                 case 2:
-                    return GetInvalidFlights(flights);
+                    return GetFlightsForFilterTwo(flights);
                 case 3:
-                    return GetLongFlights(flights);
+                    return GetFlightsForFilterThree(flights);
                 default:
                     Console.WriteLine($"Нет правила фильтрации с ключом = {key}{Environment.NewLine}");
                     return null;
             }
         }
 
-        private IList<Flight> GetCurrentFlights(IList<Flight> flights)
+        private IList<Flight> GetFlightsForFilterOne(IList<Flight> flights)
         {
             return flights.SelectMany(f => f.Segments, (f, s) => new { Flight = f, Segment = s })
                 .Where(anonim => anonim.Segment.DepartureDate > DateTime.Now)
@@ -53,7 +53,7 @@ namespace Gridnine.FlightCodingTest
                 .Select(grouping => grouping.Key).ToList();
         }
 
-        private IList<Flight> GetInvalidFlights(IList<Flight> flights)
+        private IList<Flight> GetFlightsForFilterTwo(IList<Flight> flights)
         {
             return flights.SelectMany(f => f.Segments, (f, s) => new { Flight = f, Segment = s })
                .Where(anonim => anonim.Segment.ArrivalDate > anonim.Segment.DepartureDate)
@@ -61,7 +61,7 @@ namespace Gridnine.FlightCodingTest
                .Select(grouping => grouping.Key).ToList();
         }
 
-        private IList<Flight> GetLongFlights(IList<Flight> flights)
+        private IList<Flight> GetFlightsForFilterThree(IList<Flight> flights)
         {
             var fastFlights = new List<Flight>();
 

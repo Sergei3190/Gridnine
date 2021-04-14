@@ -43,7 +43,7 @@ namespace Gridnine.Tests
         }
 
         [Fact]
-        public void GetCurrentFlights_Ok()
+        public void GetFlightsForFilterOne_Ok()
         {
             var flightBuilder = new FlightBuilder();
 
@@ -62,7 +62,7 @@ namespace Gridnine.Tests
         }
 
         [Fact]
-        public void GetInvalidFlights_Ok()
+        public void GetFlightsForFilterTwo_Ok()
         {
             var flightBuilder = new FlightBuilder();
 
@@ -81,7 +81,7 @@ namespace Gridnine.Tests
         }
 
         [Fact]
-        public void GetLongFlights_Ok()
+        public void GetFlightsForFilterThree_Ok()
         {
             var flightBuilder = new FlightBuilder();
 
