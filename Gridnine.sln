@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gridnine", "Gridnine\Gridnine.csproj", "{729F5201-5351-42DF-BD6C-B86F2E610C10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gridnine.Tests", "Gridnine.Tests\Gridnine.Tests.csproj", "{1877D7D2-38C4-45A5-92D0-4D5E78BA4FE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{729F5201-5351-42DF-BD6C-B86F2E610C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729F5201-5351-42DF-BD6C-B86F2E610C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729F5201-5351-42DF-BD6C-B86F2E610C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729F5201-5351-42DF-BD6C-B86F2E610C10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1877D7D2-38C4-45A5-92D0-4D5E78BA4FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1877D7D2-38C4-45A5-92D0-4D5E78BA4FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1877D7D2-38C4-45A5-92D0-4D5E78BA4FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1877D7D2-38C4-45A5-92D0-4D5E78BA4FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C577D0A7-A30F-45DA-8B51-7326E5B5A851}
+	EndGlobalSection
+EndGlobal
